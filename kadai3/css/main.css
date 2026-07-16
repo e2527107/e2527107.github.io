@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+
+/* 全体レイアウト */
+
+body {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+}
+
+
+/* ヘッダー */
+
+header {
+
+    background-color: #faa;
+
+    grid-area: header;
+
+    padding: 20px;
+
+}
+
+
+#top h1 {
+
+    background-color: #f99;
+
+    padding: 10px;
+
+}
+
+
+
+/* ナビゲーション */
+
+nav > a {
+
+    display: inline-block;
+
+    margin: 0 8px 0 0;
+
+    padding: 8px 4px;
+
+    border: 1px solid #000;
+
+    border-radius: 4px;
+
+    background: linear-gradient(#FFF,#999);
+
+}
+
+
+/* リンクにマウスを乗せた時 */
+
+nav > a:hover {
+
+    background-color: pink;
+
+}
+
+
+
+/* メイン */
+
+main {
+
+    background-color: #afa;
+
+    grid-area: main;
+
+    padding: 20px;
+
+}
+
+
+
+/* セクション */
+
+section {
+
+    margin: 20px 0;
+
+    padding: 10px;
+
+    border: 2px solid #ff99bb;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+}
+
+
+
+/* 見出し */
+
+h2 {
+
+    background-color: #ffc;
+
+    padding: 10px;
+
+}
+
+
+h3 {
+
+    background-color: #ccf;
+
+    padding: 5px;
+
+}
+
+
+
+/* リスト */
+
+ul {
+
+    padding: 10px;
+
+}
+
+
+section li {
+
+    margin: 15px;
+
+}
+
+
+
+/* 画像 */
+
+img {
+
+    margin: 10px;
+
+    border: 1px solid #000;
+
+    border-radius: 8px;
+
+}
+
+
+
+/* JavaScript結果表示 */
+
+#oshi_result {
+
+    color: #f06;
+
+    font-size: 1.5em;
+
+}
+
+
+#quiz_result {
+
+    color: blue;
+
+    font-size: 1.5em;
+
+}
+
+
+
+/* ボタン */
+
+button {
+
+    margin: 5px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #000;
+
+    border-radius: 8px;
+
+    background: linear-gradient(#fff,#ffc0cb);
+
+}
+
+
+button:hover {
+
+    border: 2px solid red;
+
+}
+
+
+
+/* フッター */
+
+footer {
+
+    background-color: #aaa;
+
+    grid-area: footer;
+
+    padding: 10px;
+
+}
